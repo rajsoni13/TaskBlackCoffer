@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TaskBlackCoffer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/appDefault</item>
+        <item name="colorAccent">@color/appDefault</item>
+        <item name="colorPrimaryDark">@color/appDefault</item>
+
+
+    </style>
+    <style name="CustomeTabStyle"    parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="lablestyle">
+        <item name="android:textColor">@color/appDefault</item>
+        <item name="android:fontFamily">@font/opensans</item>
+
+    </style>
+
+    <style name="Theme.TaskBlackCoffer" parent="Base.Theme.TaskBlackCoffer" />
+</resources>

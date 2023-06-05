@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".refine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/appDefault"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrowback"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refine"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gotham"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Availbility"
+        android:textColor="@color/appDefault"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensans"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+
+        <Spinner
+            android:id="@+id/questions_set1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sppiner"
+            android:focusableInTouchMode="true"
+            android:paddingVertical="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Available | Hey Let Us Connect"
+            android:textColor="@color/appDefault"
+            app:layout_constraintBottom_toBottomOf="@+id/questions_set1"
+            app:layout_constraintStart_toStartOf="@+id/questions_set1"
+            app:layout_constraintTop_toTopOf="@+id/questions_set1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrowdown"
+            app:layout_constraintBottom_toBottomOf="@+id/questions_set1"
+            app:layout_constraintEnd_toEndOf="@+id/questions_set1"
+            app:layout_constraintTop_toTopOf="@+id/questions_set1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your status"
+        android:textColor="@color/appDefault"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensans"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minLines="3"
+        android:gravity="top|start"
+        android:textColorHighlight="#5610395A"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="3"
+        android:maxLength="250"
+        android:background="@drawable/sppiner"
+        android:padding="5dp"
+        android:textColor="@color/appDefault"
+        android:textSize="15sp"
+        android:text="Hi community! I am open to new connection &#128522; "
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="20dp">
+
+
+
+    <TextView
+        android:id="@+id/textcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/appDefault"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/250"
+            android:textSize="12sp"
+            android:textColor="@color/appDefault"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hyper Local Distance"
+        android:textColor="@color/appDefault"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensans"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:value="1"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:labelStyle="@color/appDefault"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackColorActive="@color/appDefault"
+            app:trackColorInactive="#D6D6D6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans"
+                android:text="1 Km"
+                android:textColor="@color/appDefault"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/opensans"
+                android:text="100 Km"
+                android:textColor="@color/appDefault"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Purpose"
+        android:textColor="@color/appDefault"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensans"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/purposegroup"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        app:toggle_requiredAmount="1"
+        app:toggle_selectableAmount="7"
+        app:toggle_selectAnimation="fade">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Coffee"
+            android:id="@+id/coffee"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Business"
+            android:id="@+id/business"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Hobbies"
+            android:id="@+id/hobbies"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/purposegroup2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        app:toggle_requiredAmount="1"
+        app:toggle_selectableAmount="7"
+        app:toggle_selectAnimation="fade">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Friendship"
+            android:id="@+id/friendship"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Movies"
+            android:id="@+id/movies"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Dinning"
+            android:id="@+id/dinning"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/purposegroup3"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        app:toggle_requiredAmount="1"
+        app:toggle_selectableAmount="7"
+        app:toggle_selectAnimation="fade">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Dating"
+            android:id="@+id/dating"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Matrimony"
+            android:id="@+id/matrimony"
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderColor="@color/appDefault"
+            app:toggle_borderWidth="1dp"
+            app:toggle_selectedBackgroundColor="@color/appDefault"/>
+
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn"
+        android:text="Save &amp; Explore"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        />
+
+
+</LinearLayout>

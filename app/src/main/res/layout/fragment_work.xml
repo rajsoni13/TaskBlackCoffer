@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.work">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/search"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Search"
+                android:paddingLeft="10dp"
+                android:textColor="@color/appDefault"
+                android:textColorHint="#9010395A"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0"
+                android:background="@drawable/filter" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/listitemgroup" />
+
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/basebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:fab_addButtonColorNormal="@color/appDefault"
+        app:fab_labelStyle="@style/lablestyle"
+        app:fab_addButtonColorPressed="#B010395A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Dating"
+            app:fab_icon="@drawable/dating"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Matrimony"
+            app:fab_icon="@drawable/matrimony"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Buy-Sell-Rent"
+            app:fab_icon="@drawable/bagg"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Business Cards"
+            app:fab_icon="@drawable/businesscard"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Hashtags"
+            app:fab_icon="@drawable/hash"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Jobs"
+            app:fab_icon="@drawable/bagg"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Notes"
+            app:fab_icon="@drawable/notes"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFC107"
+            app:fab_colorPressed="#B010395A"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

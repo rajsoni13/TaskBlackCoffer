@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Task BlackCoffer</string>
+
+    <string-array name="AllQue">
+        <item>Available | Hey Let Us Connect</item>
+        <item>Away | Stay Discreet And Watch</item>
+        <item>Busy | Do Not Disturb | I will Catch Up Later</item>
+        <item>SOS | Emergency Need Assistance! Help</item>
+    </string-array>
+    
+    <string name="a" >Raj Soni</string>
+    <string name="b" >Shubham Shah</string>
+    <string name="c" >Parth Patel</string>
+    <string name="d" >Raj Verma</string>
+    <string name="e" >Tejas Vaishnav</string>
+    <string name="f" >Chirag Patel</string>
+    <string name="g" >Jeet Undaviya</string>
+    <string name="h" >Meet Seth</string>
+    <string name="i" >Aakash Modi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
